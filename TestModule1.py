@@ -1,0 +1,5 @@
+print("Hello world")
+print("Good Day", end=" ")
+print("Whatsup ")
+print("I'm going to go "," what is this",sep =":::::")
+print("I'm going to go")
