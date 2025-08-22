@@ -117,3 +117,51 @@ print("hello")
 print(sum_answer(2, 3))
 test = sum_answer(15,20)
 print(test)
+
+
+import traceback
+
+def calculator():
+
+    # Get dog age
+    age = input("Input dog years: ")
+
+    try:
+        # Cast to float
+        d_age = float(age)
+
+        # If user enters negative number, print message
+        # Otherwise, calculate dog's age in human years
+
+        # your code here
+        if d_age < 0:
+            print("Not allowed negative")
+            return
+        if d_age <= 1:
+            human_age = d_age * 15
+        elif d_age <= 2:
+            human_age = d_age * 12
+        elif d_age <= 3:
+            human_age = d_age * 9.3
+        elif d_age <= 4:
+            human_age = d_age * 8
+        elif d_age <= 5:
+            human_age = d_age * 7.2
+        else:
+            # First 5 y = 36 human y, rest = 7 each
+            human_age = 36 + (d_age - 5) * 7
+
+        # Round to 2 decimal
+        human_age = round(human_age, 2)
+
+        # Print
+        print(f"The given dog age {d_age} is {human_age} in human years.")
+
+
+    except ValueError as e :
+        print(age, "is an invalid age.")
+        print(e)
+        print(traceback.format_exc())
+
+calculator()
+
