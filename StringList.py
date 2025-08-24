@@ -123,7 +123,67 @@ print(name2_list)
 name2_list[0] = 'H'
 name2_string = ','.join(name2_list)
 print(name2_string)
+direction  =('N','S','E','W')   # Tupple is Round bracket () while list is []
+print(type(direction))
+#direction(0) = 'North'   #Tuple is IMMUTABLE while LIST is MUTABLE
+print(direction)
+name_tuple=tuple(name2)
+print(name_tuple)
+#Tuples help to return multiple values in a function
+def max_and_min(listvalue):
+    return (max(listvalue), min(listvalue))
 
+def main():
+    print(max_and_min([1,2,3,4,5,6,7,8,9]))
+    list22=[32,2,32,11,3,9,1]
+    print(list22)
+    maxmin=max_and_min(list22)
+    print(type(max_and_min))
+    print(type(maxmin))
+    print(maxmin)
+    max=maxmin[0]
+    min=maxmin[1]
+    print(max)
+    print(min)
+    #Double var assignment GET TUPLE DIRECTLY
+    maxv2,minv2=max_and_min(list22)
+    print(maxv2,minv2)
 
+if __name__ == '__main__':
+    main()
 
+#Set UNORDERED collection
+#Set uses Curly Braces
+fruit = {'apple','banana','mango','peach','apple'}
+print(fruit)
+print(type(fruit))
+a='abracadabra'
+a_set = set(a)
+print(a_set)
+b=[1,3,2,13,2,4,2,43,54,65,2,54,2]
+print(b)
+b_set = set(b)
+print(b_set)
+empty_set = set()
+print(empty_set)
+empty_set.add(1)
+print(empty_set)
+#iterate over a_set
+for c in a_set:
+    print(c, end = ' ')
+print('')
+
+#iterate over b_set
+for n in b_set:
+    print(n, end = ' ')
+
+print('')
+
+#add to a_set
+a_set.add('z')
+print(a_set)
+
+#remove from b_set
+b_set.remove(65)
+print(b_set)
 
