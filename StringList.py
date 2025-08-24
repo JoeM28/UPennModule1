@@ -102,3 +102,28 @@ name2_string = ','.join(name2_list)
 name3_string = ''.join(name2_list)
 print(name2_string)
 print(name3_string)
+for i in range(5):
+    print(i)
+myList = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+print(myList[6:8])
+# split STRING to LIST
+colors = 'blue,red,green'
+print(colors)
+colors_list=colors.split(',')
+print(colors_list)
+# join LIST to string
+human_list = ['man', 'animal', 'human']
+print(human_list)
+human1 = ','.join(human_list)
+print(human1)
+#modify string thro List conversion
+print(name2)
+name2_list = list(name2)
+print(name2_list)
+name2_list[0] = 'H'
+name2_string = ','.join(name2_list)
+print(name2_string)
+
+
+
+
