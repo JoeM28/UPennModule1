@@ -70,13 +70,19 @@ print(type(a))
 # Array indexing
 # one-dimensional array
 a = np.arange(6)**2 
-a
-a[2]                    # Select the 3rd element
-a[2:5]                  # Select the 3rd - 5th elements
+print(a)
+print(a[2])                    # Select the 3rd element
+print(a[2:5])                  # Select the 3rd - 5th elements
 # equivalent to a[0:6:2] = -1000; from start to position 6, exclusive, 
 # set every 2nd element to -1000
 a[:6:2] = -100     
-a[::-1]                 # reverse the array
+print(a)
+a[::-1]
+print(a)# reverse the array
+y=a[::-1]
+print(y)
+#Use the randn function to create an array with a dimension of 5X5 and use a for loop to calculate the sum of all elements in the diagonal of the array. (25 points)
+#Choose any three functions to apply to this array. (25 points)
 
 
 # two-dimensional array
